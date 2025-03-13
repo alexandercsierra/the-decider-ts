@@ -1,9 +1,24 @@
 @import "tailwindcss";
 
+@layer components {
+  input {
+    color: black;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+  }
+}
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+/* for debugging */
+.rb {
+  border: 1px solid red;
 }

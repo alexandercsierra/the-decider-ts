@@ -1,19 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import "./index.css"
+import './app.css'
+import DecisionPanel from "./components/DecisionPanel"
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
       <h1 className="text-3xl font-bold">
         The Decider
       </h1>
+      <div className="flex justify-center w-full mt-4">
 
+        <DecisionPanel placeholder={"choice 1"} />
+        <DecisionPanel placeholder={"choice 2"} />
+      </div>
     </div>
   )
 }
 
+
 export default App
+
+
